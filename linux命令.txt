@@ -1,0 +1,35 @@
+service iptables stop  关闭防火墙
+
+chhconfig iptables off 永久关闭防火墙
+
+ps aux|grep 应用名  查看进程
+
+./zkcli.sh -zkhost 192.168.119.134:2181,192.168.119.134:2182,192.168.119.134:2183 -cmd upconfig -confdir /usr/local/solr-cloud/solrhome01/collection1/conf -confname myconf
+
+./redis-cli -h 192.168.119.128 -p 6379  bin目录下 -h连接的地址,-p端口号
+
+mv 原文件名 改后文件名  命令用来为文件或目录改名、或将文件或目录移入其它位置。
+
+tar -zxf filename 解压缩
+
+cp -r filename 路径/filename(可以改名)  复制文件到路径,可改名 -r(复制目录) 复制文件不用
+
+zookeeper命令
+进入bin目录
+./zkServer.sh start  启动zookeeper
+./zkServer.sh stop  关闭
+./zkServer.sh status  查看状态
+
+使用rm -i filename删除文件
+
+tail -f logs/catalina.out 查看日志,在tomcat目录下
+
+使用-i命令参数会在删除前提示你是不是要真的删除该文件，因为文件一旦删除就无法找回
+
+如图输入命令后会有提示，输入y后成功删除
+
+nginx  在sbin目录下  nginx -s reload   修改后重启nginx
+
+Redis的所有数据都是保存到内存中的。
+Rdb：快照形式，定期把内存中当前时刻的数据保存到磁盘。Redis默认支持的持久化方案。
+aof形式：append only file。把所有对redis数据库操作的命令，增删改操作的命令。保存到文件中。数据库恢复时把所有的命令执行一遍即可。
